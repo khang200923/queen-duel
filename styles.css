@@ -1,5 +1,16 @@
+.container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+p { font-family: 'Open Sans', sans-serif; }
 .chess-board { border-spacing: 0; border-collapse: collapse; }
-.chess-board td { width: 1.5em; height: 1.5em; text-align: center; font-size: 32px; line-height: 0;}
+.chess-board td {
+    width: 1.5em; height: 1.5em;
+    text-align: center;
+    font-size: 32px;
+    line-height: 0;}
 .chess-board .light { background: #eee; }
 .chess-board .dark { background: #aaa; }
 .chess-board td.mov:hover { background: #88f; }

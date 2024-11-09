@@ -80,6 +80,18 @@ async function render() {
         tableBody.appendChild(tableRow);
     }
     boardNode.appendChild(tableBody);
+    if (chess.end() === true)
+    {
+        let msg = document.createElement("p");
+        msg.innerHTML = "<b>White wins!</b>";
+        document.getElementById("container").appendChild(msg);
+    }
+    if (chess.end() === false)
+    {
+        let msg = document.createElement("p");
+        msg.innerHTML = "<b>Black wins!</b>";
+        document.getElementById("container").appendChild(msg);
+    }
 }
 
 window.onload = function() {
