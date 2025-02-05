@@ -1,8 +1,11 @@
 .container {
     position: absolute;
+    width: 400px; height: 400px;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
 }
 p { font-family: 'Open Sans', sans-serif; }
 .chess-board { border-spacing: 0; border-collapse: collapse; }
