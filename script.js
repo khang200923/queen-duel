@@ -82,14 +82,16 @@ async function render() {
     boardNode.appendChild(tableBody);
     if (chess.end() === true)
     {
-        let msg = document.createElement("p");
-        msg.innerHTML = "<b>White wins!</b>";
+        let msg = document.createElement("span");
+        msg.setAttribute("id", "msg");
+        msg.innerHTML = "<p style='color: white;'>White wins! <a href='/index.html' style='color: white;'>Retry?</a></p>";
         document.getElementById("container").appendChild(msg);
     }
     if (chess.end() === false)
     {
-        let msg = document.createElement("p");
-        msg.innerHTML = "<b>Black wins!</b>";
+        let msg = document.createElement("span");
+        msg.setAttribute("id", "msg");
+        msg.innerHTML = "<p style='color: white;'>Black wins! <a href='/index.html' style='color: white;'>Retry?</a></p>";
         document.getElementById("container").appendChild(msg);
     }
 }

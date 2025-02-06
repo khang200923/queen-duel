@@ -1,3 +1,12 @@
+body, p, b, span, a, button {
+    font-family: "Consolas", monospace;
+    font-size: 18px;
+}
+
+body {
+    background-color: black;
+}
+
 .container {
     position: absolute;
     width: 400px; height: 400px;
@@ -7,13 +16,12 @@
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
-p { font-family: 'Open Sans', sans-serif; }
 .chess-board { border-spacing: 0; border-collapse: collapse; }
 .chess-board td {
     width: 1.5em; height: 1.5em;
     text-align: center;
     font-size: 32px;
     line-height: 0;}
-.chess-board .light { background: #eee; }
-.chess-board .dark { background: #aaa; }
+.chess-board .light { background: #ccc; }
+.chess-board .dark { background: #888; }
 .chess-board td.mov:hover { background: #88f; }
