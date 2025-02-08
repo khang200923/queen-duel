@@ -84,14 +84,14 @@ async function render() {
     {
         let msg = document.createElement("span");
         msg.setAttribute("id", "msg");
-        msg.innerHTML = "<p style='color: white;'>White wins! <a href='/index.html' style='color: white;'>Retry?</a></p>";
+        msg.innerHTML = "<p style='color: white;'>White wins! <a href='' style='color: white;'>Retry?</a></p>";
         document.getElementById("container").appendChild(msg);
     }
     if (chess.end() === false)
     {
         let msg = document.createElement("span");
         msg.setAttribute("id", "msg");
-        msg.innerHTML = "<p style='color: white;'>Black wins! <a href='/index.html' style='color: white;'>Retry?</a></p>";
+        msg.innerHTML = "<p style='color: white;'>Black wins! <a href='' style='color: white;'>Retry?</a></p>";
         document.getElementById("container").appendChild(msg);
     }
 }
